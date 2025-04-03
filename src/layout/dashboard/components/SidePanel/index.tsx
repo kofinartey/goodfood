@@ -37,7 +37,7 @@ export function SidePanel() {
     <div className="block w-[80px] bg-[#F1F2F7] h-screen text-[#08243150] lg:w-[240px]">
       <div>
         {/* LOGO */}
-        <div className="border-b-2 border-b-[#C8CBD9]">
+        <div className="border-b-1 border-b-[#C8CBD9]">
           <div className="h-[64px] mx-2  flex items-center justify-center lg:justify-start lg:mx-10">
             <div className="h-5 w-5 mr-2 bg-[#5A67BA] rounded-full text-white text-xs flex items-center justify-center">
               <h2>G</h2>

@@ -4,9 +4,9 @@ import { SidePanel } from "./components/SidePanel";
 
 export function Dashboard() {
   return (
-    <div className="flex">
+    <div className="flex ">
       <SidePanel />
-      <div className="">
+      <div className="w-full ">
         <Navbar />
         <div>
           <Outlet />
