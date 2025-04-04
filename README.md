@@ -43,3 +43,8 @@ Hooks are structured to return `data` and `actions`.
         } = useComponent()
 ```
 
+
+##### TODO
+- [ ] Button hover state
+- [ ] Notifications list
+- [ ] Charts minutiae
