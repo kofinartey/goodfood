@@ -4,7 +4,7 @@ export function RatingSection() {
       <h3>Your Rating</h3>
 
       <p>Lorem ipsum dolor sit amet, consectetur</p>
-      <div className="relative text-white mt-8">
+      <div className="relative text-white mt-8 max-w-100 min-h-70">
         <div className="absolute left-14 w-30 h-30 bg-[#6463D680] rounded-full flex items-center justify-center">
           <div className="text-center">
             <p className="text-2xl">85%</p>

@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+.dashboard-wrapper {
+  height: calc(100vh - 65px);
+  overflow: scroll;
+}

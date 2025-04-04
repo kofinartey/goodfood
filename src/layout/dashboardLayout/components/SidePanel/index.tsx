@@ -36,7 +36,7 @@ export function SidePanel() {
   ];
 
   return (
-    <div className="block w-[80px] bg-[#F1F2F7] h-screen text-[#08243150] lg:w-[240px]">
+    <div className="block w-[60px] bg-[#F1F2F7] h-screen text-[#08243150] lg:w-[240px]">
       <div>
         {/* LOGO */}
         <div className="border-b-1 border-b-[#C8CBD9]">
@@ -50,7 +50,7 @@ export function SidePanel() {
           </div>
         </div>
 
-        <div className=" mx-10 mt-8 mb-4 text-xs opacity-0 lg:opacity-100">
+        <div className=" mx-10 mt-8 mb-4 text-xs hidden lg:block lg:opacity-100">
           <h2>MENU</h2>
         </div>
 
@@ -58,7 +58,7 @@ export function SidePanel() {
           <SidePanelItem item={item} key={item.href} />
         ))}
 
-        <div className="mx-10 mt-8 mb-4 text-xs opacity-0 lg:opacity-100">
+        <div className="mx-10 mt-8 mb-4 text-xs hidden lg:block lg:opacity-100">
           <h2>OTHERS</h2>
         </div>
 

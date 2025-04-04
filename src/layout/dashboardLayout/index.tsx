@@ -8,7 +8,7 @@ export function DashboardLayout() {
       <SidePanel />
       <div className="w-full ">
         <Navbar />
-        <div>
+        <div className="dashboard-wrapper">
           <Outlet />
         </div>
       </div>
