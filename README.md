@@ -35,3 +35,11 @@ The folder structure thus looks like:
       index.tsx
 ```
 
+Hooks are structured to return `data` and `actions`.
+```
+  const {
+          data: { orders },
+          actions: { getOrders }
+        } = useComponent()
+```
+
