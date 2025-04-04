@@ -1,4 +1,5 @@
 import { Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
+import { Button } from "../../../../shared/components/Button";
 
 export function OrderTimeSection() {
   const data = [
@@ -23,11 +24,7 @@ export function OrderTimeSection() {
           <p>OrderTime</p>
           <p className="text-gray-500">From 1-6 Dec, 2020</p>
         </div>
-        <div>
-          <button className=" bg-[#FBFCFE] px-4 py-2 mb-10 border-1 rounded-lg border-[#DDE4F0] text-[#5A6ACF] shadow-md l">
-            View Report
-          </button>
-        </div>
+        <Button>View Report</Button>
       </div>
       <div className="">
         <ResponsiveContainer width={"100%"} height={200}>
@@ -38,7 +35,7 @@ export function OrderTimeSection() {
               outerRadius={80}
               innerRadius={60}
               fill="#8884d8"
-            //   label
+              //   label
             />
             <Tooltip />
           </PieChart>

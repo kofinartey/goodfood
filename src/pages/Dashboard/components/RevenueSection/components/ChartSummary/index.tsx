@@ -1,3 +1,5 @@
+import { Button } from "../../../../../../shared/components/Button";
+
 export function RevenueSummary() {
   return (
     <div className="flex flex-col  md:flex-row md:justify-between lg:items-start ">
@@ -10,9 +12,7 @@ export function RevenueSummary() {
       </div>
 
       <div>
-        <button className=" bg-[#FBFCFE] px-4 py-2 mb-10 border-1 rounded-lg border-[#DDE4F0] text-[#5A6ACF] shadow-md l">
-          View Report
-        </button>
+        <Button>View Report</Button>
       </div>
     </div>
   );
