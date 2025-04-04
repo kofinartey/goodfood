@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import { Dashboard } from "../index";
+import { DashboardLayout } from "../index";
 
 describe("Dashboard", () => {
   test("should do something", () => {
-    render(<Dashboard />);
+    render(<DashboardLayout />);
     expect(screen.getByText("Dashboard")).toBeInTheDocument();
   });
 });
