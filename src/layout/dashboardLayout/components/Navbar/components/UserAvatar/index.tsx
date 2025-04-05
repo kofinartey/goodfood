@@ -7,6 +7,7 @@ export function UserAvatar() {
     data: { isOptionsOpen, menuOptions, userData },
     actions: { handleUserClick },
   } = useUserAvatar();
+
   return (
     <div className="">
       <button
@@ -28,6 +29,7 @@ export function UserAvatar() {
         </div>
       </button>
 
+      {/* TODO: Move into separate component */}
       {isOptionsOpen ? (
         <>
           <div className="absolute z-10 bg-[#F1F2F7] w-[200px] md:w-[270px] mt-4 rounded-lg right-0">
@@ -48,6 +50,7 @@ export function UserAvatar() {
           </div>
         </>
       ) : null}
+
       {/* Options overlay */}
       {isOptionsOpen ? (
         <div

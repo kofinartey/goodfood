@@ -45,6 +45,6 @@ Hooks are structured to return `data` and `actions`.
 
 
 ##### TODO
-- [ ] Button hover state
-- [ ] Notifications list
+- [x] Button hover state
+- [x] Notifications list
 - [ ] Charts minutiae

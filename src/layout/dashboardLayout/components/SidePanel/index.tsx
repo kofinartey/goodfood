@@ -11,8 +11,6 @@ import {
 import { SidePanelItem } from "./components/SidePanelItem";
 
 export function SidePanel() {
-  // TODO:
-  // move data into hook
   const menuList = [
     {
       href: "",

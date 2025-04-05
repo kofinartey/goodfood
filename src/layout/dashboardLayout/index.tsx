@@ -6,7 +6,7 @@ export function DashboardLayout() {
   return (
     <div className="flex ">
       <SidePanel />
-      <div className="w-full ">
+      <div className="w-full">
         <Navbar />
         <div className="dashboard-wrapper">
           <Outlet />

@@ -8,7 +8,7 @@ export function useUserAvatar() {
 
   const menuOptions = ["Profile", "Settings", "Logout"];
 
-  const [isOptionsOpen, setIsOptionsOpen] = useState(true);
+  const [isOptionsOpen, setIsOptionsOpen] = useState(false);
   const handleUserClick = useCallback(() => {
     setIsOptionsOpen(!isOptionsOpen);
   }, [isOptionsOpen]);
