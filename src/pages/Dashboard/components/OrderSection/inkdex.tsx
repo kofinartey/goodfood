@@ -15,7 +15,7 @@ export function OrderSection() {
 
   return (
     <div className="m-8 mb-0">
-      <div className="md:flex justify-between">
+      <div className="md:flex justify-between items-start">
         <div>
           <p className="mb-2">Order</p>
           <p className="text-2xl mb-2">2.568</p>
