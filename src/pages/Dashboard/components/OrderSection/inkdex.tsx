@@ -7,6 +7,7 @@ import {
 } from "recharts";
 import { useOrderSection } from "./hooks/useOrderSection";
 import { Button } from "../../../../shared/components/Button";
+import { ArrowDownIcon } from "../../../../assets/icons/svgIcons/ArrowDownIcon";
 
 export function OrderSection() {
   const {
@@ -17,11 +18,12 @@ export function OrderSection() {
     <div className="m-8 mb-0">
       <div className="md:flex justify-between items-start">
         <div>
-          <p className="mb-2">Order</p>
+          <h2 className="mb-2">Order</h2>
           <p className="text-2xl mb-2">2.568</p>
-          <p>
-            <span className="text-[#F2383A]">2.1%</span> vs last week
-          </p>
+          <div className="text-gray-500 text-xs flex items-center gap-2">
+            <ArrowDownIcon />
+            <span className="text-[#F2383A]">2.1%</span>svs last week
+          </div>
         </div>
 
         <Button>View Report</Button>

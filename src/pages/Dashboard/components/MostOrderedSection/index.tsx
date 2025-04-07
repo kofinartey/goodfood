@@ -7,8 +7,8 @@ export function MostOrderedSection() {
 
   return (
     <div className="lg:border-x-1 border-[#C8CBD9] p-8">
-      <p className="mb-2">Most Ordered Food</p>
-      <p className="text-sm text-gray-500">
+      <h2 className="mb-2">Most Ordered Food</h2>
+      <p className="text-xs text-gray-500">
         Adipiscing elit, sed do eiusmod tempor
       </p>
 

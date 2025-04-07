@@ -13,10 +13,12 @@ export function SidePanelItem({ item }: { item: PanelItem }) {
         isActive ? "bg-[#707FDD10]" : ""
       } rounded-lg hover:bg-[#707FDD10] mx-2 lg:mx-4 `}
     >
-      <Link to={item.href} className="text-[12px]">
+      <Link to={item.href} className="text-xs">
         <div className="flex items-center p-4  lg:px-6">
-          <div className="mr-3">{item.icon}</div>
-          <span className="hidden lg:block">{item.label}</span>
+          <div className="mr-3" data-testid={`${item.testId}-icon`}>
+            {item.icon}
+          </div>
+          <span className="hidden lg:block w-25">{item.label}</span>
         </div>
       </Link>
     </div>
