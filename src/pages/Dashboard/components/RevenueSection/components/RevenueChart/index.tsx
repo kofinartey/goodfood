@@ -9,6 +9,10 @@ import {
 } from "recharts";
 
 export function RevenueChart() {
+  const labels: Record<string, { label: string; color: string }> = {
+    last6: { label: "Last 6 days", color: "bg-[#5A6ACF]" },
+    lastWeek: { label: "Last Week", color: "bg-[#D8D9DB]" },
+  };
   const chartData = [
     { name: "01", last6: 24, lastWeek: 12 },
     { name: "02", last6: 12, lastWeek: 21 },
@@ -25,12 +29,24 @@ export function RevenueChart() {
   ];
 
   return (
-    <div className="">
+    <div data-testid="revenue-chart">
       <ResponsiveContainer width={"100%"} height={200}>
         <BarChart data={chartData} width={48} height={48}>
           <CartesianGrid strokeDasharray="2 3" />
-          <Legend margin={{ top: 10 }} />
-          <XAxis dataKey="name"/>
+          {/* <Legend  verticalAlign="bottom" align="left" height={36} iconType="circle" iconSize={10} /> */}
+          <Legend
+            content={({ payload }) => (
+              <div className="flex text-xs text-gray-700">
+                {payload?.map((p) => (
+                  <div className="flex items-center mr-4">
+                    <div className={`${labels[p.value].color} w-2 h-2 rounded-full mr-2`}/>
+                    <div>{labels[`${p.value}`].label}</div>
+                  </div>
+                ))}
+              </div>
+            )}
+          />
+          <XAxis dataKey="name"  />
           <Bar barSize={10} dataKey="last6" fill="#5A6ACF" />
           <Bar barSize={10} dataKey="lastWeek" fill="#E6E8EC" />
           <Tooltip />

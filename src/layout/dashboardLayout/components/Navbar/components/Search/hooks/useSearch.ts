@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 
 type Result = {
   data: { searchValue: string };
@@ -10,10 +10,6 @@ type Result = {
 
 export function useSearch(): Result {
   const [searchValue, setSearchValue] = useState("");
-
-  useEffect(() => {
-    console.log("seraching", searchValue);
-  }, [searchValue]);
 
   const handleSearchInput = useCallback((val: string) => {
     setSearchValue(val);

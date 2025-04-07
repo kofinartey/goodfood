@@ -15,22 +15,49 @@ export function SidePanel() {
     {
       href: "",
       label: "Dashboard",
+      testId: "dashboard",
       icon: <StatsIcon />,
     },
-    { href: "food-order", label: "Food Order", icon: <CartIcon /> },
-    { href: "manage-menu", label: "Manage Menu", icon: <DocumentIcon /> },
+    {
+      href: "food-order",
+      label: "Food Order",
+      testId: "food-order",
+      icon: <CartIcon />,
+    },
+    {
+      href: "manage-menu",
+      label: "Manage Menu",
+      testId: "manage-menu",
+      icon: <DocumentIcon />,
+    },
     {
       href: "customer-review",
       label: "Customer Review",
+      testId: "customer-review",
       icon: <MessageIcon />,
     },
   ];
 
   const othersList = [
-    { href: "settings", label: "Settings", icon: <SettingsIcon /> },
-    { href: "payment", label: "Payment", icon: <WalletIcon /> },
-    { href: "accounts", label: "Accounts", icon: <ProfileIcon /> },
-    { href: "help", label: "Help", icon: <InfoIcon /> },
+    {
+      href: "settings",
+      label: "Settings",
+      testId: "settings",
+      icon: <SettingsIcon />,
+    },
+    {
+      href: "payment",
+      label: "Payment",
+      testId: "payment",
+      icon: <WalletIcon />,
+    },
+    {
+      href: "accounts",
+      label: "Accounts",
+      testId: "accounts",
+      icon: <ProfileIcon />,
+    },
+    { href: "help", label: "Help", testId: "help", icon: <InfoIcon /> },
   ];
 
   return (
@@ -40,16 +67,16 @@ export function SidePanel() {
         <div className="border-b-1 border-b-[#C8CBD9]">
           <div className="h-[64px] mx-2  flex items-center justify-center lg:justify-start lg:mx-10">
             <div className="h-5 w-5 mr-2 bg-[#5A67BA] rounded-full text-white text-xs flex items-center justify-center">
-              <h2>G</h2>
+              <p>G</p>
             </div>
-            <h2 className="hidden text-[#5A67BA] font-bold text-xs lg:block ">
+            <p className="hidden text-[#5A67BA] font-bold text-xs lg:block ">
               GOODFOOD
-            </h2>
+            </p>
           </div>
         </div>
 
         <div className=" mx-10 mt-8 mb-4 text-xs hidden lg:block lg:opacity-100">
-          <h2>MENU</h2>
+          <p>MENU</p>
         </div>
 
         {menuList.map((item) => (
@@ -57,7 +84,7 @@ export function SidePanel() {
         ))}
 
         <div className="mx-10 mt-8 mb-4 text-xs hidden lg:block lg:opacity-100">
-          <h2>OTHERS</h2>
+          <p>OTHERS</p>
         </div>
 
         {othersList.map((item) => (

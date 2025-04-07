@@ -1,9 +1,9 @@
-import { render, screen } from "@testing-library/react";
 import { DashboardLayout } from "../index";
+import { renderer } from "../../../shared/test-helpers/render";
 
 describe("Dashboard", () => {
   test("should do something", () => {
-    render(<DashboardLayout />);
-    expect(screen.getByText("Dashboard")).toBeInTheDocument();
+    const { getByText } = renderer(<DashboardLayout />);
+    expect(getByText("Dashboard")).toBeInTheDocument();
   });
 });

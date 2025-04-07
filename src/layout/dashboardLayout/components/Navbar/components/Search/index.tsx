@@ -18,6 +18,7 @@ export function Search() {
       <button
         className="absolute h-full w-10 right-0 "
         onClick={handleSearchClick}
+        aria-label="Search Button"
       >
         <div className=" w-full h-full  flex justify-center items-center hover:bg-[#5A6ACF20]">
           <SearchIcon />
