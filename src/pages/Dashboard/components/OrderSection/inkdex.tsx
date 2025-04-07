@@ -22,7 +22,7 @@ export function OrderSection() {
           <p className="text-2xl mb-2">2.568</p>
           <div className="text-gray-500 text-xs flex items-center gap-2">
             <ArrowDownIcon />
-            <span className="text-[#F2383A]">2.1%</span>svs last week
+            <span className="text-[#F2383A]">2.1%</span>vs last week
           </div>
         </div>
 

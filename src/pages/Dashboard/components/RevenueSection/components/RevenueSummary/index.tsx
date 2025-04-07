@@ -13,7 +13,7 @@ export function RevenueSummary() {
         <div className="flex items-center">
           <ArrowUpIcon className="mr-2" />
           <p className="text-xs">
-            <span className="text-[#149D52]">2.1%</span>
+            <span className="text-[#149D52]">2.1%</span> {" "}
             <span className="text-gray-500">vs last week</span>
           </p>
         </div>
